@@ -1,0 +1,62 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ddd; /* Couleur de fond grise */
+  color: #888; /* Couleur du texte grise */
+  cursor: not-allowed; /* Curseur non autorisé */
+}
+
+.PrizeAnimation {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: showPrize 1s ease forwards;
+}
+
+.dateTime {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(20, 26, 105); /* Text color */
+  margin-top: 10px;
+}
+
+@keyframes showPrize {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
